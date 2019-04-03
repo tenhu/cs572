@@ -1,0 +1,15 @@
+1. setImmediate VS setTimeout 
+setImmediate didn't use queue function and It always executed before any timer scheduled within I/O cycle.   
+
+2. Both are same async event and Process.nextTick is highest priority 
+
+3.'async_hooks',
+  'buffer',
+  'child_process',
+  'constants',
+  'crypto',
+  'cluster',
+  'dns',
+  'domain',
+  'events',
+  'http'
