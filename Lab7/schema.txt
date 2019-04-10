@@ -1,0 +1,31 @@
+-- Book Schema
+
+{
+     _id: objectId(),
+     bookIsbn: '4232', 
+     title: 'Game of thrones',
+     author: 'George Martin',
+     keyword: 'got',
+     borrow: [
+          { 
+               studentName: 'Ochtulga',
+               studentEmail: 'o@mum.edu', 
+               borrowedDate: '4/8/2019',
+               returnDate: '4/8/2019' 
+          },
+          { 
+               studentName: 'Ochtulga',
+               studentEmail: 'o@mum.edu', 
+               borrowedDate: '4/8/2019',
+               returnDate: '4/8/2019' 
+          }
+     ],
+     availableCount: 3   
+}
+
+-- Librarian Schema 
+
+{
+     librarianName: 'Tulga',
+     password: 'test' 
+}

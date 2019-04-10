@@ -1,0 +1,54 @@
+GET http://localhost:3000/  
+
+###
+
+GET http://localhost:3000/lectures 
+
+
+###
+
+GET http://localhost:3000/lectures/5cabfe8316c3c806f0a3c3f7 
+
+
+###
+
+POST http://localhost:3000/lectures HTTP/1.1
+content-type: application/json
+
+{
+  "course": "CS435",
+  "lecture": "Tree, algorithm"
+}
+
+
+###
+
+DELETE http://localhost:3000/lectures HTTP/1.1
+content-type: application/json
+
+{
+  "id": "5cabfe8d16c3c806f0a3c3f8"
+}
+
+###
+PUT http://localhost:3000/lectures HTTP/1.1
+content-type: application/json
+
+{
+  "id": "5cabfe8316c3c806f0a3c3f7",
+  "course": "CS472",
+  "lecture": "HTML, Javascript"
+}
+
+###
+POST http://localhost:3000/lectures/search/o HTTP/1.1
+content-type: application/json
+
+{
+  "course": "CS435",
+  "lecture": "Tree, algorithm"
+}
+
+###
+
+GET http://localhost:3000/lectures/secret
