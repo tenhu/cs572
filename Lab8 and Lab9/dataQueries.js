@@ -1,7 +1,7 @@
 const mongoClient = require('mongodb').MongoClient;
 
 
-mongoClient.connect('mongodb+srv://dragon_node:bFntRN97iuFDnyQf@mycluster-4moia.mongodb.net/homework08?retryWrites=true')
+mongoClient.connect('mongodb+srv://NNNNN:XXXX@mycluster-4moia.mongodb.net/homework08?retryWrites=true')
      .then(client => {
           doWork(client.db());
           //console.log(client);

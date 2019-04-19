@@ -5,7 +5,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 let dbConn;
 
-const mongoConnect = callback => MongoClient.connect('mongodb+srv://dragon_node:bFntRN97iuFDnyQf@mycluster-4moia.mongodb.net/homework07?retryWrites=true')
+const mongoConnect = callback => MongoClient.connect('mongodb+srv://CCCCC:XXXXXX@mycluster-4moia.mongodb.net/homework07?retryWrites=true')
      .then(client => {
           //console.log(result);
           dbConn = client.db();
